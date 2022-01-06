@@ -323,7 +323,7 @@ public final class Builder {
         if (Build.VERSION.SDK_INT >= 23) {
             piFlag = PendingIntent.FLAG_IMMUTABLE;
         } else {
-            piFlag = PendingIntent.FLAG_UPDATE_CURRENT;
+            piFlag = PendingIntent.FLAG_CANCEL_CURRENT;
         }
         PendingIntent deleteIntent = PendingIntent.getBroadcast(
                 context, reqCode, intent, piFlag);
@@ -355,7 +355,7 @@ public final class Builder {
         if (Build.VERSION.SDK_INT >= 23) {
             piFlag = PendingIntent.FLAG_IMMUTABLE;
         } else {
-            piFlag = PendingIntent.FLAG_UPDATE_CURRENT;
+            piFlag = PendingIntent.FLAG_CANCEL_CURRENT;
         }
         PendingIntent contentIntent = PendingIntent.getActivity(
                 context, reqCode, intent, piFlag);
