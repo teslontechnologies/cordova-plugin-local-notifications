@@ -3,6 +3,9 @@ ChangeLog
 
 Please also read the [Upgrade Guide](https://github.com/katzer/cordova-plugin-local-notifications/wiki/Upgrade-Guide) for more information.
 
+#### Version 1.0.2 (06.01.2022)
+- Change Pending Intents for DeleteReceiver and ContentReceiver
+
 #### Version 1.0.1 (21.12.2021)
 - Fix Trigger Notification
 
