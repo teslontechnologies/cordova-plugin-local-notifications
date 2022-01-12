@@ -72,6 +72,7 @@
         <config-file target="config.xml" parent="/*">
             <feature name="LocalNotification">
                 <param name="ios-package" value="APPLocalNotification" />
+                <param name="onload" value="true" />
             </feature>
         </config-file>
 
@@ -118,16 +119,16 @@
 
             <receiver
                 android:name="de.appplant.cordova.plugin.localnotification.TriggerReceiver"
-                android:exported="false" 
+                android:exported="false"
                 android:enabled="true" >
                 <intent-filter>
                     <action android:name="android.intent.action.BOOT_COMPLETED" />
                 </intent-filter>
             </receiver>
 
-            <receiver 
+            <receiver
                 android:name="de.appplant.cordova.plugin.localnotification.ClearReceiver"
-                android:exported="false" 
+                android:exported="false"
                 android:enabled="true" >
                 <intent-filter>
                     <action android:name="android.intent.action.BOOT_COMPLETED" />
