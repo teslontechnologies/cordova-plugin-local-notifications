@@ -93,6 +93,7 @@ public class MatchTrigger extends IntervalTrigger {
     private Calendar getBaseTriggerDate(Date date) {
         Calendar cal = getCal(date);
 
+        cal.set(Calendar.MILLISECOND, 0);
         cal.set(Calendar.SECOND, 0);
 
         if (matchers.get(0) != null) {
@@ -205,7 +206,11 @@ public class MatchTrigger extends IntervalTrigger {
                     break;
             }
         } else
-        if (cal.get(Calendar.MINUTE) < now.get(Calendar.MINUTE)) {
+        if (
+            (cal.get(Calendar.MINUTE) < now.get(Calendar.MINUTE)) ||
+            (cal.get(Calendar.SECOND) < now.get(Calendar.SECOND)) ||
+            (cal.get(Calendar.MILLISECOND) < now.get(Calendar.MILLISECOND))
+        ) {
             switch (unit) {
                 case MINUTE:
                     addToDate(cal, now, Calendar.MINUTE, 1);
