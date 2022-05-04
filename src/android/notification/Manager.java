@@ -21,20 +21,12 @@
 
 package de.appplant.cordova.plugin.notification;
 
-import static android.os.Build.VERSION.SDK_INT;
-import static android.os.Build.VERSION_CODES.M;
-import static android.os.Build.VERSION_CODES.O;
-import static androidx.core.app.NotificationManagerCompat.IMPORTANCE_DEFAULT;
-import static de.appplant.cordova.plugin.notification.Notification.PREF_KEY_ID;
-import static de.appplant.cordova.plugin.notification.Notification.Type.TRIGGERED;
-
 import android.annotation.SuppressLint;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.service.notification.StatusBarNotification;
-
 import androidx.core.app.NotificationManagerCompat;
 
 import org.json.JSONException;
@@ -45,6 +37,13 @@ import java.util.List;
 import java.util.Set;
 
 import de.appplant.cordova.plugin.badge.BadgeImpl;
+
+import static android.os.Build.VERSION.SDK_INT;
+import static android.os.Build.VERSION_CODES.M;
+import static android.os.Build.VERSION_CODES.O;
+import static androidx.core.app.NotificationManagerCompat.IMPORTANCE_DEFAULT;
+import static de.appplant.cordova.plugin.notification.Notification.PREF_KEY_ID;
+import static de.appplant.cordova.plugin.notification.Notification.Type.TRIGGERED;
 
 /**
  * Central way to access all or single local notifications set by specific

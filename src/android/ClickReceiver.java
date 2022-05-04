@@ -21,11 +21,7 @@
 
 package de.appplant.cordova.plugin.localnotification;
 
-import static de.appplant.cordova.plugin.notification.Options.EXTRA_LAUNCH;
-import static de.appplant.cordova.plugin.notification.Request.EXTRA_LAST;
-
 import android.os.Bundle;
-
 import androidx.core.app.RemoteInput;
 
 import org.json.JSONException;
@@ -33,6 +29,9 @@ import org.json.JSONObject;
 
 import de.appplant.cordova.plugin.notification.Notification;
 import de.appplant.cordova.plugin.notification.receiver.AbstractClickReceiver;
+
+import static de.appplant.cordova.plugin.notification.Options.EXTRA_LAUNCH;
+import static de.appplant.cordova.plugin.notification.Request.EXTRA_LAST;
 
 /**
  * The receiver activity is triggered when a notification is clicked by a user.
