@@ -3,6 +3,9 @@ ChangeLog
 
 Please also read the [Upgrade Guide](https://github.com/katzer/cordova-plugin-local-notifications/wiki/Upgrade-Guide) for more information.
 
+#### Version 1.0.4 (18.05.2022)
+- Use AndroidX Dependencies for Notification, NotificationManager, FileProvider and RemoteInput
+
 #### Version 1.0.3 (21.01.2022)
 - Prevent Continuous Notification triggering on Android
 - Add Missing LaunchDetails on iOS
