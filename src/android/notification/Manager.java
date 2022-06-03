@@ -346,7 +346,7 @@ public final class Manager {
             JSONObject dict = new JSONObject(json);
 
             return new Options(context, dict);
-        } catch (JSONException e) {
+        } catch (JSONException | NullPointerException e) {
             e.printStackTrace();
             return null;
         }
