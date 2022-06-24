@@ -343,10 +343,13 @@ public final class Manager {
 
         try {
             String json     = prefs.getString(toastId, null);
+            if (json == null) {
+                return null;
+            }
             JSONObject dict = new JSONObject(json);
 
             return new Options(context, dict);
-        } catch (JSONException | NullPointerException e) {
+        } catch (JSONException e) {
             e.printStackTrace();
             return null;
         }
