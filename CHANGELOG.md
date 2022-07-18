@@ -3,6 +3,9 @@ ChangeLog
 
 Please also read the [Upgrade Guide](https://github.com/katzer/cordova-plugin-local-notifications/wiki/Upgrade-Guide) for more information.
 
+#### Version 1.0.5 (18.07.2022)
+- Fix Null Pointer Exception in Manager Class for Android
+
 #### Version 1.0.4 (18.05.2022)
 - Use AndroidX Dependencies for Notification, NotificationManager, FileProvider and RemoteInput
 
