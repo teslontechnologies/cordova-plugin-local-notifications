@@ -23,7 +23,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="@spoonconsulting/cordova-plugin-local-notification"
+    id="@teslontechnologies/cordova-plugin-local-notification"
     version="1.0.5">
 
     <name>LocalNotification</name>
