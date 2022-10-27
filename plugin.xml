@@ -50,6 +50,7 @@
 
     <!-- dependencies -->
     <dependency id="cordova-plugin-device" />
+    <dependency id="cordova-plugin-badge" url="https://github.com/katzer/cordova-plugin-badge" commit="0.8.8" />
 
     <!-- js -->
     <js-module src="www/local-notification.js" name="LocalNotification">
