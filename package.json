@@ -1,18 +1,14 @@
 {
-  "name": "@spoonconsulting/cordova-plugin-local-notification",
+  "name": "@teslontechnologies/cordova-plugin-local-notification",
   "version": "1.0.5",
   "description": "Schedules and queries for local notifications",
   "cordova": {
-    "id": "@spoonconsulting/cordova-plugin-local-notification",
+    "id": "@teslontechnologies/cordova-plugin-local-notification",
     "platforms": [
       "android",
       "ios",
       "windows"
     ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/spoonconsulting/cordova-plugin-local-notifications.git"
   },
   "keywords": [
     "appplant",
@@ -24,32 +20,9 @@
     "cordova-android",
     "cordova-windows"
   ],
-  "engines": [
-    {
-      "name": "cordova",
-      "version": ">=3.6.0"
-    },
-    {
-      "name": "cordova-android",
-      "version": ">=6.0.0"
-    },
-    {
-      "name": "cordova-windows",
-      "version": ">=4.2.0"
-    },
-    {
-      "name": "android-sdk",
-      "version": ">=26"
-    },
-    {
-      "name": "apple-ios",
-      "version": ">=10.0.0"
-    }
-  ],
-  "author": "Sebastián Katzer & Spoon Consulting",
-  "license": "Apache 2.0",
-  "bugs": {
-    "url": "https://github.com/spoonconsulting/cordova-plugin-local-notifications/issues"
+  "repository": "https://github.com/teslontechnologies/cordova-plugin-local-notification",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
-  "homepage": "https://github.com/spoonconsulting/cordova-plugin-local-notifications#readme"
+  "author": "Dileep R"
 }
